@@ -1,0 +1,54 @@
+@import "/src/Sass/resposive";
+@import "/src/Sass/library";
+
+.login {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+
+	width: 100vw;
+	height: 100vh;
+
+	background-image: url(../../Assets/Background-Login.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	.login__Form {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+
+		width: 90%;
+		height: 50%;
+		padding: 0 1rem;
+		border: 1px solid black;
+		border-radius: 1rem;
+
+		background-color: $secondary-color;
+
+		& h3 {
+			margin-bottom: 2rem;
+		}
+
+		input {
+			width: 100%;
+			height: 15%;
+			margin-bottom: 1rem;
+		}
+		@include breakpoint(tablet) {
+			width: 50%;
+		}
+		@include breakpoint(laptop) {
+			width: 40%;
+		}
+	}
+	button {
+		margin-top: 1rem;
+		width: 40%;
+		height: 15;
+
+		border-radius: 1rem;
+	}
+}

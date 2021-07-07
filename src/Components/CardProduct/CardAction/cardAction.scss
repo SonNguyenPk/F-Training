@@ -1,0 +1,21 @@
+.cardAction {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
+
+	.cardAction__ChangeQuantity {
+		display: flex;
+		flex-flow: row nowrap;
+		button,
+		p {
+			width: (100%/3);
+		}
+		p {
+			text-align: center;
+			font: 700;
+		}
+	}
+	.cardAction__AddToCart {
+		width: 100%;
+	}
+}

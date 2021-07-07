@@ -1,0 +1,14 @@
+.productDetail {
+	display: flex;
+	flex-flow: row nowrap;
+	.productDetail__Image {
+		width: 30%;
+		img {
+			object-fit: contain;
+		}
+	}
+	.productDetail__Content {
+		width: 70%;
+		padding: 2rem 1rem;
+	}
+}
